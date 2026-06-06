@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "health-test",
+    "slug": "health-test",
+    "version": "1.0.0",
+    "newArchEnabled": true,
+    "ios": {
+      "bundleIdentifier": "com.yourname.healthtest",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "歩数テストのために使用します。",
+        "NSHealthUpdateUsageDescription": "歩数テストのために使用します。"
+      }
+    },
+    "plugins": [
+      [
+        "react-native-health",
+        {
+          "isHealthDataAvailable": true,
+          "permissions": { "read": ["StepCount"] }
+        }
+      ]
+    ]
+  }
+}
